@@ -1,16 +1,121 @@
-.header {
-  width: 1001px;
-  height: 50px;
+.Card {
+  height: 120px;
   border: 1px solid black;
+  padding: 10px;
+  display: flex;
   border-bottom: none;
-  box-sizing: border-box;
-  background: gold;
-  margin: 0 auto;
 }
 @media (max-width: 480px) {
-  .header {
-    width: 100%;
+  .Card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+}
+.Card-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card-content {
+  padding: 10px 0 0 10px;
+}
+.Card--Card2 {
+  height: 180px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+.Card--content3 {
+  padding: 10px 10px 0 0;
+}
+@media (max-width: 480px) {
+  .Card--content3 {
+    margin-bottom: 5px;
+  }
+}
+.Card--Card4 {
+  height: 180px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .Card--Card4 {
+    height: 100%;
+  }
+}
+.Card--content4 {
+  padding: 10px 10px 0 0;
+}
+@media (max-width: 480px) {
+  .Card--content4 {
+    margin-bottom: 5px;
+  }
+}
+.Card--Card5 {
+  height: 120px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  .Card--Card5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+  }
+}
+.Card--foto5 {
+  width: 25%;
+}
+@media (max-width: 480px) {
+  .Card--foto5 {
+    width: 50%;
+  }
+}
+.Card--content5 {
+  width: 100%;
+}
+.Card--Card6 {
+  height: 120px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  .Card--Card6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+  }
+}
+.Card--foto6 {
+  width: 25%;
+}
+@media (max-width: 480px) {
+  .Card--foto6 {
+    width: 50%;
+    margin-left: 5px;
+  }
+}
+.Card--content6 {
+  width: 100%;
 }
 .container {
   width: 1001px;
@@ -25,14 +130,20 @@
     width: 100%;
   }
 }
-.container .main1 {
+.header {
+  height: 50px;
+  box-sizing: border-box;
+  background: gold;
+  margin: 0 -15px;
+}
+.main1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
 @media (max-width: 480px) {
-  .container .main1 {
+  .main1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,178 +152,67 @@
     margin: 8px 0;
   }
 }
-.container .main1 .block,
-.container .main1 .block1,
-.container .main1 .block2 {
-  width: 181px;
-  height: 181px;
+.block {
+  width: 18%;
+  height: 150px;
   border: 1px solid black;
   box-sizing: border-box;
-  margin: 8px;
+  margin: 1%;
   background: grey;
 }
 @media (max-width: 480px) {
-  .container .main1 .block,
-  .container .main1 .block1,
-  .container .main1 .block2 {
+  .block {
+    width: 40%;
     margin: 8px 0;
   }
 }
-.container .main1 .block1 {
-  margin: 8px 8px 8px 0;
-}
-@media (max-width: 480px) {
-  .container .main1 .block1 {
-    margin: 8px 0;
-  }
-}
-.container .main1 .block2 {
-  margin: 8px 0 8px 8px;
-}
-@media (max-width: 480px) {
-  .container .main1 .block2 {
-    margin: 8px 0;
-  }
-}
-.container .main2 {
+.main2 {
   display: flex;
 }
 @media (max-width: 480px) {
-  .container .main2 {
+  .main2 {
     display: flex;
     flex-direction: column;
   }
 }
-.container .main2-left {
+.main2-left {
   flex: 1;
   display: flex;
   flex-direction: column;
   margin: 0 5px 0 0;
 }
 @media (max-width: 480px) {
-  .container .main2-left {
+  .main2-left {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-.container .main2-left .card1 {
-  height: 120px;
-  border: 1px solid black;
-  padding: 10px;
-  display: flex;
-  border-bottom: none;
-}
-@media (max-width: 480px) {
-  .container .main2-left .card1 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.container .main2-left .card1-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .main2-left .card1-content {
-  padding: 10px 0 0 10px;
-}
-.container .main2-left .card2 {
-  height: 120px;
-  border: 1px solid black;
-  padding: 10px;
-  display: flex;
-  height: 180px;
-}
-@media (max-width: 480px) {
-  .container .main2-left .card2 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.container .main2-left .card2-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .main2-left .card2-content {
-  padding: 10px 0 0 10px;
-}
-.container .main2-right {
+.main2-right {
   flex: 2;
   display: flex;
   flex-direction: column;
   margin: 0 0 0 5px;
 }
 @media (max-width: 480px) {
-  .container .main2-right {
+  .main2-right {
     margin: 0 auto;
   }
 }
-.container .main2-right .card3 {
-  height: 120px;
-  border: 1px solid black;
-  padding: 10px;
-  display: flex;
-  border-bottom: none;
-}
-@media (max-width: 480px) {
-  .container .main2-right .card3 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.container .main2-right .card3-content {
-  padding: 10px 10px 0 0;
-}
-.container .main2-right .card3-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .main2-right .card4 {
-  height: 120px;
-  border: 1px solid black;
-  padding: 10px;
-  display: flex;
-  height: 180px;
-}
-@media (max-width: 480px) {
-  .container .main2-right .card4 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.container .main2-right .card4-content {
-  padding: 10px 10px 0 0;
-}
-.container .main2-right .card4-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .main3 {
+.main3 {
   width: 100%;
   height: 100%;
   display: flex;
   margin: 10px 0;
 }
 @media (max-width: 480px) {
-  .container .main3 {
+  .main3 {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-.container .main3-left {
+.main3-left {
   flex: 1;
   height: 100%;
   display: flex;
@@ -224,46 +224,16 @@
   margin: 0 10px 0 0;
 }
 @media (max-width: 480px) {
-  .container .main3-left {
+  .main3-left {
     width: 100%;
     margin: 0 auto;
   }
 }
-.container .main3-left:hover {
+.main3-left:hover {
   background: #00e600;
   opacity: 0.5;
 }
-.container .main3-left .card5 {
-  height: 120px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 250px;
-  padding: 10px;
-}
-@media (max-width: 480px) {
-  .container .main3-left .card5 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 18px;
-  }
-  .container .main3-left .card5-content {
-    width: 60%;
-  }
-  .container .main3-left .card5-foto {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.container .main3-right {
+.main3-right {
   flex: 1;
   height: 100%;
   display: flex;
@@ -275,41 +245,11 @@
   margin: 0 0 0 10px;
 }
 @media (max-width: 480px) {
-  .container .main3-right {
+  .main3-right {
     width: 100%;
     margin: 0 auto;
   }
 }
-.container .main3-right:hover {
+.main3-right:hover {
   background: #990000;
-}
-.container .main3-right .card6 {
-  height: 120px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 250px;
-  padding: 10px;
-}
-@media (max-width: 480px) {
-  .container .main3-right .card6 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    padding: 18px;
-  }
-  .container .main3-right .card6-content {
-    width: 58%;
-  }
-  .container .main3-right .card6-foto {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }

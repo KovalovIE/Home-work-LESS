@@ -1,0 +1,105 @@
+.Card {
+    .card();
+	border-bottom: none;
+	@media (max-width: 480px) {
+	    .media-main2-card()
+	}
+
+	&-foto {
+		.flex-foto();
+	}
+
+	&-content { 
+		padding: 10px 0 0 10px;
+	}
+
+		&--Card2 {
+			height: 180px;
+			border-bottom: 1px solid black;
+			box-sizing: border-box;
+		}
+
+		&--content3 {
+			padding: 10px 10px 0 0;
+
+			@media (max-width: 480px) {
+	    		margin-bottom: 5px;
+			}
+		}
+
+		&--Card4 {
+			height: 180px;
+			border-bottom: 1px solid black;
+			box-sizing: border-box;
+
+			@media (max-width: 480px) {
+	    		height: 100%;
+			}
+		}
+
+		&--content4 {
+			padding: 10px 10px 0 0;
+
+			@media (max-width: 480px) {
+	    		margin-bottom: 5px;
+			}
+	
+		}
+
+		&--Card5 {
+			.card();
+			.card-main3();
+
+			@media (max-width: 480px) {
+			    width: 100%;    
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				padding: 18px;
+			}
+		}
+
+		&--foto5 {
+			width: 25%;
+
+			@media (max-width: 480px) {
+			    width: 50%;    
+			}
+		}
+
+		&--content5 {
+			width: 100%;
+		}
+
+		&--Card6 {
+			.card();
+			.card-main3();
+
+			@media (max-width: 480px) {
+			    width: 100%;    
+				height: 100%;
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-around;
+				align-items: center;
+				padding: 18px;
+			}
+		}
+
+		&--foto6 {
+			width: 25%;
+
+			@media (max-width: 480px) {
+			    width: 50%;
+			    margin-left: 5px;    
+			}
+
+		}
+
+		&--content6 {
+			width: 100%;
+		}		
+		
+}
